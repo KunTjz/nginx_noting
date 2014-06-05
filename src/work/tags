@@ -1,0 +1,110 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CPPS	core/makefile	/^CPPS = $(wildcard *.c)$/;"	m
+CPPS	util/makefile	/^CPPS = $(wildcard *.c)$/;"	m
+EXE	makefile	/^EXE = npserver$/;"	m
+FUNC	makefile	/^FUNC = $(MAKE) -fPIC -o .\/bin\/$(EXE) .\/obj\/*.o$/;"	m
+NPS_CMD_CLOSE_CHANNEL	core/nps_process.h	33;"	d
+NPS_CMD_OPEN_CHANNEL	core/nps_process.h	32;"	d
+NPS_CMD_QUIT	core/nps_process.h	34;"	d
+NPS_CMD_REOPEN	core/nps_process.h	36;"	d
+NPS_CMD_TERMINATE	core/nps_process.h	35;"	d
+NPS_DEFAULT_FILE_MODE	core/nps_daemon.h	5;"	d
+NPS_ERR	util/util_define.h	7;"	d
+NPS_ERR_QUIT	util/util_define.h	17;"	d
+NPS_LOCK_FILE	core/nps_daemon.h	4;"	d
+NPS_LOG	util/util_define.h	13;"	d
+NPS_LOG_ERR	util/util_define.h	9;"	d
+NPS_LOG_INFO	util/util_define.h	10;"	d
+NPS_LOG_WARNING	util/util_define.h	11;"	d
+NPS_MAX_PROCESSES	core/nps_process.h	24;"	d
+NPS_NOACCEPT_SIGNAL	core/nps_process.h	40;"	d
+NPS_OK	util/util_define.h	6;"	d
+NPS_PROCESS_DETACHED	core/nps_process.h	30;"	d
+NPS_PROCESS_JUST_RESPAWN	core/nps_process.h	29;"	d
+NPS_PROCESS_JUST_SPAWN	core/nps_process.h	27;"	d
+NPS_PROCESS_MASTER	core/nps_process.h	46;"	d
+NPS_PROCESS_NORESPAWN	core/nps_process.h	26;"	d
+NPS_PROCESS_RESPAWN	core/nps_process.h	28;"	d
+NPS_PROCESS_WORKER	core/nps_process.h	47;"	d
+NPS_RECONFIGURE_SIGNAL	core/nps_process.h	41;"	d
+NPS_SHUTDOWN_SIGNAL	core/nps_process.h	38;"	d
+NPS_TERMINATE_SIGNAL	core/nps_process.h	39;"	d
+OBJS	core/makefile	/^OBJS = $(patsubst %.c, %.o, $(CPPS))$/;"	m
+OBJS	util/makefile	/^OBJS = $(patsubst %.c, %.o, $(CPPS))$/;"	m
+ROOTDIRS	makefile	/^export ROOTDIRS = $(shell pwd)$/;"	m
+TARGET_DIRS	makefile	/^TARGET_DIRS = 	util	\\$/;"	m
+__NPS_CHANNEL_H__	core/nps_channel.h	2;"	d
+__NPS_DAEMON_H__	core/nps_daemon.h	2;"	d
+__NPS_PROCESS_H__	core/nps_process.h	2;"	d
+__NPS_SOCKET_H__	core/nps_socket.h	2;"	d
+__NPS_UTIL_DEFINE_H__	util/util_define.h	2;"	d
+__NPS_UTIL_FUNC_H__	util/util_func.h	2;"	d
+channel	core/nps_process.h	/^    int			channel[2];$/;"	m	struct:__anon2
+command	core/nps_channel.h	/^    unsigned int    command;$/;"	m	struct:__anon3
+create_pidfile	core/nps_daemon.c	/^int create_pidfile()$/;"	f
+data	core/nps_process.h	/^    void*		data;$/;"	m	struct:__anon2
+destroy_pidfile	core/nps_daemon.c	/^int destroy_pidfile()$/;"	f
+detached	core/nps_process.h	/^    unsigned		detached:1;$/;"	m	struct:__anon2
+exited	core/nps_process.h	/^    unsigned		exited:1;$/;"	m	struct:__anon2
+exiting	core/nps_process.h	/^    unsigned		exiting:1;$/;"	m	struct:__anon2
+fd	core/nps_channel.h	/^    int		    fd;$/;"	m	struct:__anon3
+handler	core/nps_process.c	/^    void    (*handler)(int signo);$/;"	m	struct:__anon1	file:
+just_spawn	core/nps_process.h	/^    unsigned		just_spawn:1;$/;"	m	struct:__anon2
+lock_file	util/util_func.c	/^int lock_file(int fd, int type)$/;"	f
+main	core/main.c	/^int main(int argc, char* argv[])$/;"	f
+name	core/nps_process.c	/^    char*   name;$/;"	m	struct:__anon1	file:
+name	core/nps_process.h	/^    char*		name;$/;"	m	struct:__anon2
+nps_blocking	core/nps_socket.c	/^int nps_blocking(int s)$/;"	f
+nps_channel	core/nps_process.c	/^int		nps_channel;$/;"	v
+nps_channel_t	core/nps_channel.h	/^} nps_channel_t;$/;"	t	typeref:struct:__anon3
+nps_close_channel	core/nps_channel.c	/^void nps_close_channel(int* fd)$/;"	f
+nps_daemon	core/nps_daemon.c	/^int nps_daemon()$/;"	f
+nps_init_signals	core/nps_process.c	/^int nps_init_signals()$/;"	f
+nps_last_process	core/nps_process.c	/^int		nps_last_process;$/;"	v
+nps_master_process_cycle	core/nps_process.c	/^void nps_master_process_cycle()$/;"	f
+nps_master_process_exit	core/nps_process.c	/^static void nps_master_process_exit()$/;"	f	file:
+nps_noaccept	core/nps_process.c	/^sig_atomic_t	nps_noaccept;$/;"	v
+nps_noaccepting	core/nps_process.c	/^unsigned int	nps_noaccepting;$/;"	v
+nps_nonblocking	core/nps_socket.c	/^int nps_nonblocking(int s)$/;"	f
+nps_pass_open_channel	core/nps_process.c	/^static void nps_pass_open_channel(nps_channel_t* ch)$/;"	f	file:
+nps_pid	core/nps_process.c	/^pid_t		nps_pid;$/;"	v
+nps_process	core/nps_process.c	/^int		nps_process;$/;"	v
+nps_process_slot	core/nps_process.c	/^int		nps_process_slot;$/;"	v
+nps_process_t	core/nps_process.h	/^}nps_process_t;$/;"	t	typeref:struct:__anon2
+nps_processes	core/nps_process.c	/^nps_process_t	nps_processes[NPS_MAX_PROCESSES];$/;"	v
+nps_quit	core/nps_process.c	/^sig_atomic_t	nps_quit;  $/;"	v
+nps_read_channel	core/nps_channel.c	/^int nps_read_channel(int s, nps_channel_t* ch, size_t size)$/;"	f
+nps_reap	core/nps_process.c	/^sig_atomic_t	nps_reap;  $/;"	v
+nps_reap_children	core/nps_process.c	/^static unsigned int nps_reap_children()$/;"	f	file:
+nps_sigalrm	core/nps_process.c	/^sig_atomic_t	nps_sigalrm;$/;"	v
+nps_sigio	core/nps_process.c	/^sig_atomic_t	nps_sigio; $/;"	v
+nps_signal_handler	core/nps_process.c	/^void nps_signal_handler(int signo)$/;"	f
+nps_signal_helper	core/nps_process.h	43;"	d
+nps_signal_t	core/nps_process.c	/^} nps_signal_t;$/;"	t	typeref:struct:__anon1	file:
+nps_signal_value	core/nps_process.h	44;"	d
+nps_signal_worker_processes	core/nps_process.c	/^static void nps_signal_worker_processes(int signo)$/;"	f	file:
+nps_spawn_proc_pt	core/nps_process.h	/^typedef void (*nps_spawn_proc_pt) (void* data);$/;"	t
+nps_spawn_process	core/nps_process.c	/^pid_t nps_spawn_process(int respawn, char* name, nps_spawn_proc_pt proc, void* data)$/;"	f
+nps_terminate	core/nps_process.c	/^sig_atomic_t	nps_terminate;$/;"	v
+nps_work_process_init	core/nps_process.c	/^static void nps_work_process_init(int worker)$/;"	f	file:
+nps_worker_process_cycle	core/nps_process.c	/^static void nps_worker_process_cycle(void* data)$/;"	f	file:
+nps_worker_process_exit	core/nps_process.c	/^static void nps_worker_process_exit()$/;"	f	file:
+nps_write_channel	core/nps_channel.c	/^int nps_write_channel(int s, nps_channel_t* ch, size_t size)$/;"	f
+pid	core/nps_channel.h	/^    pid_t	    pid;$/;"	m	struct:__anon3
+pid	core/nps_process.h	/^    pid_t		pid;$/;"	m	struct:__anon2
+pid_file_fd	core/nps_daemon.c	/^int pid_file_fd = -1;$/;"	v
+proc	core/nps_process.h	/^    nps_spawn_proc_pt	proc;$/;"	m	struct:__anon2
+respawn	core/nps_process.h	/^    unsigned		respawn:1;$/;"	m	struct:__anon2
+signals	core/nps_process.c	/^nps_signal_t signals[] = {$/;"	v
+signame	core/nps_process.c	/^    char*   signame;$/;"	m	struct:__anon1	file:
+signo	core/nps_process.c	/^    int	    signo;$/;"	m	struct:__anon1	file:
+slot	core/nps_channel.h	/^    int		    slot;$/;"	m	struct:__anon3
+start_worker_processes	core/nps_process.c	/^static void start_worker_processes(int type, int n)$/;"	f	file:
+status	core/nps_process.h	/^    int			status;$/;"	m	struct:__anon2
+try_lock	util/util_func.c	/^int try_lock(int fd)$/;"	f
+unlock_file	util/util_func.c	/^int unlock_file(int fd)$/;"	f

@@ -1,0 +1,7 @@
+# define for makefile
+# auther: rciahrd 
+# time:  2013.10.6
+MAKE = gcc
+CFLAGS = -Wall -g -O3
+
+
